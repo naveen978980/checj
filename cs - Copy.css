@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .cart {
+    position: relative;
+  }
+  
+  .cart-icon {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #cart-count {
+    background-color: red;
+    border-radius: 50%;
+    padding: 2px 8px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 0.8rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .buy-now {
+    padding: 10px 20px;
+    background-color: #f9a825;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Product Section */
+  .products {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .product-card img {
+    width: 100%;
+  }
+  
+  .product-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* CTA Section */
+  .cta {
+    background-color: #f9a825;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .cta a {
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .cart {
+      font-size: 0.9rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .product-grid {
+      flex-direction: column;
+    }
+  
+    .product-card {
+      width: 100%;
+    }
+  }
+  
